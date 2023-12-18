@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,12 +27,14 @@
       <div class="container">
         <nav>
           <img class="logo" src="images/logo.png" alt="logo pic" />
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact Me</a></li>
+          <ul id="site-menu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
           </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
           <p>Frontend Web Devloper</p>
@@ -47,7 +49,7 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="images/user.png" />
+            <img src="images/Mohnish_Passport.jpg" />
           </div>
           <div class="about-col-2">
             <h1 class="subs">About me</h1>
@@ -59,42 +61,57 @@
             </p>
 
             <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">
-                Skills
+              <p class="tab-links active-link" onclick="opentab('edu')">
+                Education
               </p>
+              <p class="tab-links" onclick="opentab('skills')">Skills</p>
               <p class="tab-links" onclick="opentab('exp')">Experience</p>
-              <p class="tab-links" onclick="opentab('edu')">Education</p>
             </div>
-            <div class="tab-contents active-tab" id="skills">
+
+            <div class="tab-contents active-tab" id="edu">
               <ul>
-                <li><span>UI/UX</span><br />Designing web app interfaces</li>
-                <li><span>Web Dev</span><br />Designing web app interfaces</li>
-                <li><span>App dev</span><br />Designing web app interfaces</li>
+                <li>
+                  <span>2021 - Present </span><br />Vellore Institute of
+                  Technology, Chennai
+                </li>
+                <li>
+                  <span>2019 - 2021</span><br />Sri Chaitanya Techno School,
+                  Chennai
+                </li>
+                <li>
+                  <span>2009-2019</span><br />St.John's Senior Secondary School,
+                  Chennai
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="skills">
+              <ul>
+                <li>
+                  <span>Languages</span><br />Python, C, C++, Java, SQL, NoSQL,
+                  R, Matlab
+                </li>
+                <li>
+                  <span>Web Technologies</span><br />HTML, CSS, JavaScript,
+                  React, Tailwind CSS, Bootstrap, Flask, Django, REST APIs
+                </li>
+                <li>
+                  <span>Other Technologies and Frameworks</span><br />Git,
+                  Linux, Postman, Pytorch, Numpy, Pandas, Matplotlib,
+                  Scikit-Learn
+                </li>
               </ul>
             </div>
 
             <div class="tab-contents" id="exp">
               <ul>
                 <li>
-                  <span>2021 - Present</span><br />Designing web app interfaces
-                  - Intern
+                  <span>Aug 2023 - Dec 2023</span><br />Software Developer
+                  Intern - Logitech Engineering and Designs
                 </li>
                 <li>
-                  <span>2019 - 2021</span><br />Designing web app interfaces -
-                  Intern
+                  <span>July 2024</span><br />HDT Summer Intern - Barclays
                 </li>
-                <li>
-                  <span>2016 - 2017</span><br />Designing web app interfaces -
-                  Intern
-                </li>
-              </ul>
-            </div>
-
-            <div class="tab-contents" id="edu">
-              <ul>
-                <li><span>2016</span><br />Designing web app interfaces</li>
-                <li><span>2016</span><br />Designing web app interfaces</li>
-                <li><span>2014</span><br />Designing web app interfaces</li>
               </ul>
             </div>
           </div>
@@ -113,12 +130,13 @@
             <div class="layer">
               <h3>Certificate Generator</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
-                culpa esse beatae dicta ut debitis enim incidunt necessitatibus
-                architecto molestiae, minus tempore officiis tenetur natus,
-                aperiam quam ea corrupti iusto.
+                A unified web app that enables us to create an event with
+                branding and an authorized signatory for the specific event, and
+                generate bulk certificates for all participants and/or winners.
               </p>
-              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/micvitc/Certificate-Generator/"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
             </div>
           </div>
           <div class="work">
@@ -126,12 +144,13 @@
             <div class="layer">
               <h3>Omni Food</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
-                culpa esse beatae dicta ut debitis enim incidunt necessitatibus
-                architecto molestiae, minus tempore officiis tenetur natus,
-                aperiam quam ea corrupti iusto.
+                A comprehensive redesign of the Omni Food website, incorporating
+                advanced elements such as a sticky navigation bar, a hamburger
+                menu, a toggle switch, and various other functionalities.
               </p>
-              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/MohnishKarthikeyan/omnifood-website"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
             </div>
           </div>
           <div class="work">
@@ -139,16 +158,22 @@
             <div class="layer">
               <h3>Heavenly Helpings</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
-                culpa esse beatae dicta ut debitis enim incidunt necessitatibus
-                architecto molestiae, minus tempore officiis tenetur natus,
-                aperiam quam ea corrupti iusto.
+                A user-friendly website that enables individuals to conveniently
+                locate the nearest temple or alternative subsidiary food shop
+                for alms-giving purposes. In response to the escalating demand
+                for food assistance, This platform is a valuable resource for
+                those dedicated to virtuous contributions.
               </p>
-              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+              <a
+                href="https://github.com/MohnishKarthikeyan/Heavenly_Helpings/tree/test"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
             </div>
           </div>
         </div>
-        <a href="#" class="btn">See More</a>
+        <a href="https://github.com/MohnishKarthikeyan/" class="btn"
+          >See More</a
+        >
       </div>
     </div>
 
@@ -158,18 +183,27 @@
       <div class="container">
         <div class="row">
           <div class="contact-left">
-            <h1 class="subs">Contact Me</h1>
+            <h1 class="subs">Contact&nbspMe</h1>
             <p><i class="fa-solid fa-paper-plane"></i> mohnish1612@gmail.com</p>
             <p><i class="fa-solid fa-phone-volume"></i> +91-9176379590</p>
             <!-- <a href="#" class="btn btn2">Download Resume</a> -->
             <div class="social-icons">
-              <a href="#"><i class="fa-brands fa-github"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="#"><i class="fa-brands fa-medium"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://github.com/MohnishKarthikeyan"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/mohnish-karthikeyan-76ba06220/"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a href="https://medium.com/@mohnishkarthikeyan"
+                ><i class="fa-brands fa-medium"></i
+              ></a>
+              <a href="https://www.instagram.com/ii.mohnish.ii/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
             </div>
             <a href="images/my-cv.pdf" download class="btn btn2"
-              >Download Resume</a
+              >Download&nbspResume</a
             >
           </div>
           <div class="contact-right">
@@ -193,21 +227,6 @@
       </div>
     </div>
 
-    <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
-
-      function opentab(tabname) {
-        for (tablink of tablinks) {
-          tablink.classList.remove("active-link");
-        }
-        for (tabcontent of tabcontents) {
-          tabcontent.classList.remove("active-tab");
-        }
-
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
