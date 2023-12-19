@@ -18,6 +18,15 @@
     <link rel="stylesheet" href="/path/to/fontawesome/css/all.min.css" />
 
     <link rel="stylesheet" href="style.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("kasO65cRHk-Z0mPxo");
+      })();
+    </script>
     <title>Mohnish Portfolio Website</title>
   </head>
   <body>
@@ -208,19 +217,29 @@
           </div>
           <div class="contact-right">
             <form name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="text"
+                name="Name"
+                placeholder="Your Name"
+                id="name123"
+                required
+              />
               <input
                 type="email"
                 name="Email"
                 placeholder="Your Email ID"
+                id="email123"
                 required
               />
               <textarea
                 name="Message"
+                id="msg123"
                 rows="6"
                 placeholder="Your Message"
               ></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
+              <button type="submit" class="btn btn2" onclick="sendMail()">
+                Submit
+              </button>
             </form>
             <span id="msg"></span>
           </div>

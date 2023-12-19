@@ -41,3 +41,13 @@ form.addEventListener("submit", (e) => {
     })
     .catch((error) => console.error("Error!", error.message));
 });
+
+//email js integrations
+function sendMail() {
+  let params = {
+    name: document.getElementById("name123").value,
+    email: document.getElementById("email123").value,
+    message: document.getElementById("msg123").value,
+  };
+  emailjs.send("service_ikbzqtg", "template_hohnc7g", params);
+}
