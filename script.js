@@ -51,3 +51,18 @@ function sendMail() {
   };
   emailjs.send("service_ikbzqtg", "template_hohnc7g", params);
 }
+
+// home page text animations
+var typed = new Typed(".text", {
+  strings: [
+    "Web Developer",
+    "App Developer",
+    "Designer",
+    "Student",
+    "Tech Enthusiast",
+  ],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 1000,
+  loop: true,
+});

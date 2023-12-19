@@ -68,7 +68,7 @@ nav ul li a::after {
   content: "";
   width: 0;
   height: 3px;
-  background: #ff004f;
+  background: #0ef;
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -90,7 +90,7 @@ nav ul li a:hover::after {
 }
 
 .header-text h1 span {
-  color: #ff004f;
+  color: #0ef;
 }
 
 /* -----About Section----- */
@@ -146,7 +146,7 @@ nav ul li a:hover::after {
   content: "";
   width: 0;
   height: 3px;
-  background-color: #ff004f;
+  background-color: #0ef;
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -163,7 +163,7 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li span {
-  color: #ff004f;
+  color: #0ef;
   font-size: 14px;
 }
 
@@ -204,7 +204,7 @@ nav ul li a:hover::after {
 .layer {
   width: 100%;
   height: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #0ef);
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -227,7 +227,7 @@ nav ul li a:hover::after {
 
 .layer a {
   margin-top: 20px;
-  color: #ff004f;
+  color: #0ef;
   text-decoration: none;
   font-size: 18px;
   line-height: 60px;
@@ -252,16 +252,17 @@ nav ul li a:hover::after {
   padding: 14px 50px;
   border-radius: 10px;
   text-decoration: none;
-  border: 1px solid #ff004f;
+  border: 1px solid #0ef;
   width: fit-content;
   height: 100%;
   text-align: center;
-  color: #fff;
+  color: white;
 }
 
 .btn:hover {
-  background: #ff004f;
+  background: #0ef;
   transition: 0.5s;
+  color: black;
 }
 
 /* ---contact me---- */
@@ -279,7 +280,7 @@ nav ul li a:hover::after {
 }
 
 .contact-left p i {
-  color: #ff004f;
+  color: #0ef;
   margin-right: 15px;
   font-size: 24px;
 }
@@ -298,15 +299,15 @@ nav ul li a:hover::after {
 }
 
 .social-icons a:hover {
-  color: #ff004f;
+  color: #0ef;
   transform: translateY(-5px);
 }
 
 .btn.btn2 {
   display: inline-block;
-  background-color: #ff004f;
+  background-color: #0ef;
   height: 50px;
-  color: #fff;
+  color: black;
   margin-top: 20px;
 }
 
@@ -360,8 +361,12 @@ nav .fa-solid {
     font-size: 25px;
   }
 
+  #site-menu a {
+    color: black;
+  }
+
   nav ul {
-    background-color: #ff004f;
+    background-color: #0ef;
     position: fixed;
     top: 0;
     right: -200px;
@@ -458,6 +463,8 @@ nav .fa-solid {
 
   .header-text h1 {
     font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .mohnish_home img {
@@ -465,6 +472,10 @@ nav .fa-solid {
     height: auto;
     margin-top: 15%;
     margin-left: 0;
+  }
+
+  .header-text h3 {
+    margin-bottom: 0;
   }
 }
 
