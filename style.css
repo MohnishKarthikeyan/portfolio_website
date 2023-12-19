@@ -10,10 +10,28 @@ body {
   color: #fff;
 }
 
+/* Define the bouncing animation */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.image-with-bounce {
+  transition: transform 0.5s ease;
+  animation: bounce 2s infinite;
+}
+
 #header {
   width: 100%;
   height: 100vh;
-  background-image: url(/images/background.png);
+  /*background-image: url(/images/background.png);*/
+  background-color: #080808;
   background-size: cover;
   background-position: center;
 }
@@ -62,12 +80,12 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-  margin-top: 20%;
+  margin-top: 10%;
   font-size: 30px;
 }
 
 .header-text h1 {
-  font-size: 60px;
+  font-size: 50px;
   margin-top: 20px;
 }
 
@@ -322,9 +340,10 @@ nav .fa-solid {
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   #header {
-    background-image: url(images/phone-background.png);
+    /*background-image: url(images/phone-background.png);*/
+    background: #080808;
   }
 
   .header-text {
@@ -376,6 +395,15 @@ nav .fa-solid {
     flex-basis: 100%;
     font-size: 14px;
   }
+
+  .mohnish_home {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+  .header-text {
+    flex-basis: 100%;
+    font-size: 14px;
+  }
   /* .tab-links {
     font-size: 16px;
     margin-right: 20px;
@@ -390,4 +418,56 @@ nav .fa-solid {
   color: #61b752;
   margin-top: -30px;
   display: block;
+}
+
+.header-front {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.mohnish_home {
+  flex-basis: 35%;
+}
+
+.mohnish_home img {
+  width: 350px;
+  border-radius: 50px;
+  height: 400px;
+  margin-top: 20%;
+  margin-left: 10%;
+}
+
+.header-text {
+  flex-basis: 60%;
+}
+
+/* Media Query for Mobile Layout */
+@media (max-width: 1096px) {
+  .header-front {
+    flex-direction: column-reverse; /* Reverse the order */
+    align-items: center;
+  }
+
+  .mohnish_home,
+  .header-text {
+    flex-basis: 100%;
+    margin-top: 5%;
+    font-size: 14px;
+  }
+
+  .header-text h1 {
+    font-size: 28px;
+  }
+
+  .mohnish_home img {
+    width: 80%; /* Adjust the width as needed */
+    height: auto;
+    margin-top: 15%;
+    margin-left: 0;
+  }
+}
+
+#karthik {
+  font-size: 16px;
 }
