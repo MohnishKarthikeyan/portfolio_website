@@ -448,7 +448,7 @@ nav .fa-solid {
 }
 
 /* Media Query for Mobile Layout */
-@media (max-width: 1096px) {
+@media (max-width: 1110px) {
   .header-front {
     flex-direction: column-reverse; /* Reverse the order */
     align-items: center;
