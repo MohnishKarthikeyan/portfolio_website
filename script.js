@@ -55,11 +55,11 @@ function sendMail() {
 // home page text animations
 var typed = new Typed(".text", {
   strings: [
-    "Web Developer",
-    "App Developer",
-    "Designer",
-    "Student",
-    "Tech Enthusiast",
+    "a Web Developer",
+    "an App Developer",
+    "a Designer",
+    "a Student",
+    "a Tech Enthusiast",
   ],
   typeSpeed: 100,
   backSpeed: 100,
