@@ -54,13 +54,7 @@ function sendMail() {
 
 // home page text animations
 var typed = new Typed(".text", {
-  strings: [
-    "a Web Developer",
-    "an App Developer",
-    "a Designer",
-    "a Student",
-    "a Tech Enthusiast",
-  ],
+  strings: ["Web Developer", "Designer", "Student", "Tech Enthusiast"],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
